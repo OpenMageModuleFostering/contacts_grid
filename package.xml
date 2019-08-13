@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+    <name>contacts_grid</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Contact Us details saves in admin grid form. Admin can respond to customer from this grid directly. </summary>
+    <description>Contact Us data will be saved and can be viewed from admin grid. &#xD;
+&#xD;
+Inquiry can also be respond from this grid.&#xD;
+&#xD;
+Respond Email will be send to contacting person directly from detail page of this grid.&#xD;
+&#xD;
+Different status of Inquiry is discriminated with different colored status on grid. &#xD;
+&#xD;
+Multiple Mark As Read and multiple Delete option is available in mass action. </description>
+    <notes>Contact Us data will be saved and can be viewed from admin grid. &#xD;
+&#xD;
+Inquiry can also be respond from this grid.&#xD;
+&#xD;
+Respond Email will be send to contacting person directly from detail page of this grid.&#xD;
+&#xD;
+Different status of Inquiry is discriminated with different colored status on grid. &#xD;
+&#xD;
+Multiple Mark As Read and multiple Delete option is available in mass action. </notes>
+    <authors><author><name>Akhilesh Yadav</name><user>BuzzzAky</user><email>akhileshaky@gmail.com</email></author></authors>
+    <date>2016-07-12</date>
+    <time>13:38:43</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Buzzzaky_Contactsgrid.xml" hash="1e648f02a3ab874e8b9826a26453718d"/></dir></target><target name="magecommunity"><dir name="Buzzzaky"><dir name="Contactsgrid"><dir name="Block"><dir name="Adminhtml"><dir name="Contactsgrid"><dir name="Edit"><file name="Form.php" hash="7d3f604ecbff4927218a7f681173bffd"/><dir name="Tab"><file name="Form.php" hash="3ebb0dc62f3d6a7c8515a53135bea5b4"/></dir><file name="Tabs.php" hash="5ad911a8b5ea2c6c0a727c97ef226735"/></dir><file name="Edit.php" hash="e0fa5a7cd7722c7f6ce58d8ba6dfaa92"/><file name="Grid.php" hash="5337a34b834c70d4411ac4376a2e91dd"/></dir><file name="Contactsgrid.php" hash="a82ae3d396f61b19b3f5c4243d203fbd"/></dir></dir><dir name="Helper"><file name="Data.php" hash="3138b3d3de34dce1ebaf651d869be0b4"/></dir><dir name="Model"><file name="Contactsgrid.php" hash="05235de796ec06b9889b95f391c39efb"/><dir name="Mysql4"><dir name="Contactsgrid"><file name="Collection.php" hash="d731151b23f7819795636645dca62741"/></dir><file name="Contactsgrid.php" hash="b5a3568429a8d90a316dbd44a88c38ae"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ContactsgridController.php" hash="cf1d6057f9e462962e8ba51b1d3d9072"/></dir><dir name="Contacts"><file name="IndexController.php" hash="3466851beecdb4decf605ec1b63f6779"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="3d5ae1bf513d2c12ca015f17b5d32d81"/><file name="config.xml" hash="dace33bcd2803896ea49f3ad81f4da8f"/><file name="system.xml" hash="e02896412e8e6be06098f1a092787039"/></dir><dir name="sql"><dir name="contactsgrid_setup"><file name="mysql4-install-1.0.1.php" hash="f5f58c7b25f25438e81f1df67982cba4"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="contactsgrid.xml" hash="25f774b092dfabdd26fdb2be70f402f1"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

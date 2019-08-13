@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <Buzzzaky translate="label" module="contactsgrid">
+            <label>Buzzzaky</label>
+            <sort_order>0</sort_order>
+        </Buzzzaky>
+    </tabs>
+    <sections>
+        <cntactsgrid  translate="label" module="contactsgrid">                    
+            <label>Contact Us Grid</label>
+            <tab>Buzzzaky</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>            
+            <groups>
+                <contactus translate="label"> 
+                    <label>Contact Us</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable / Disable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <stop_mailbox_emails translate="label">
+                            <label>Stop emails on mailbox </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Default emails on mailbox can be disable.</comment>
+                        </stop_mailbox_emails>
+                        <subject translate="label">
+                            <label>Reply Subject</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Subject for reply email.</comment>
+                        </subject>
+                        <sender_name translate="label">
+                            <label>Reply Sender Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter reply sender name.</comment>
+                        </sender_name>
+                        <sender_email translate="label">
+                            <label>Reply Sender Email</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter reply sender email.</comment>
+                        </sender_email>
+                        <send_sucess_message translate="label">
+                            <label>Reply send success message.</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter email send success message to show on admin.</comment>
+                        </send_sucess_message>
+                    </fields>
+                </contactus>
+            </groups>
+        </cntactsgrid>
+    </sections>
+</config>

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Buzzzaky_Contactsgrid>
+            <version>1.0.0</version>
+        </Buzzzaky_Contactsgrid>
+    </modules>
+    <frontend>
+        <routers>
+            <contactsgrid>
+                <use>standard</use>
+                <args>
+                    <module>Buzzzaky_Contactsgrid</module>
+                    <frontName>contactsgrid</frontName>
+                </args>
+            </contactsgrid>
+        </routers>
+    </frontend>
+    <global>
+        <rewrite ifconfig="cntactsgrid/contactus/enable">        
+            <Buzzzaky_contactsgrid_contacts_indexcontroller>
+                <from><![CDATA[#^/contacts/index/#]]></from> <!-- Mage_Contacts_IndexController  -->
+                <to>/contactsgrid/contacts_index/</to> <!-- Buzzzaky_Contactsgrid_Contacts_IndexController  -->
+            </Buzzzaky_contactsgrid_contacts_indexcontroller>
+        </rewrite>
+        <helpers>
+            <contactsgrid>
+                <class>Buzzzaky_Contactsgrid_Helper</class>
+            </contactsgrid>
+        </helpers>
+        <blocks>
+            <contactsgrid>
+                <class>Buzzzaky_Contactsgrid_Block</class>
+            </contactsgrid>
+        </blocks>
+        <models>
+            <contactsgrid>
+                <class>Buzzzaky_Contactsgrid_Model</class>
+                <resourceModel>contactsgrid_mysql4</resourceModel>
+            </contactsgrid>
+            <contactsgrid_mysql4>
+                <class>Buzzzaky_Contactsgrid_Model_Mysql4</class>
+                <entities>		  
+                    <contactsgrid>
+                        <table>contacts_grid</table>
+                    </contactsgrid>
+                </entities>
+            </contactsgrid_mysql4>
+        </models>
+        <resources>
+            <contactsgrid_setup>
+                <setup>
+                    <module>Buzzzaky_Contactsgrid</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </contactsgrid_setup>
+            <contactsgrid_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </contactsgrid_write>
+            <contactsgrid_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </contactsgrid_read>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <contactsgrid>
+                <use>admin</use>
+                <args>
+                    <module>Buzzzaky_Contactsgrid</module>
+                    <frontName>admin_contactsgrid</frontName>
+                </args>
+            </contactsgrid>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <contactsgrid module="contactsgrid">
+                <title>Contact Us Grid</title>
+                <sort_order>100</sort_order>
+                <children>
+                    <contactsgrid module="contactsgrid">
+                        <title>Manage Contacts List</title>
+                        <sort_order>0</sort_order>
+                        <action>admin_contactsgrid/adminhtml_contactsgrid</action>
+                    </contactsgrid>
+                </children>
+            </contactsgrid>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <contactsgrid translate="title" module="contactsgrid">
+                            <title>Contactsgrid</title>
+                            <sort_order>1000</sort_order>
+                            <children>
+                                <contactsgrid translate="title">
+                                    <title>Manage Contactsgrid</title>
+                                    <sort_order>0</sort_order>
+                                </contactsgrid>
+                            </children>
+                        </contactsgrid>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <contactsgrid>
+                    <file>contactsgrid.xml</file>
+                </contactsgrid>
+            </updates>
+        </layout>
+    </adminhtml>
+</config> 

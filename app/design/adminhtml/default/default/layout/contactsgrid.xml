@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <contactsgrid_adminhtml_contactsgrid_index>
+	<reference name="content">
+	  <block type="contactsgrid/adminhtml_contactsgrid" name="contactsgrid" />
+	</reference>
+  </contactsgrid_adminhtml_contactsgrid_index>
+</layout>
