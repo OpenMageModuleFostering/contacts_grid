@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Buzzzaky_Contactsgrid>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </Buzzzaky_Contactsgrid>
     </modules>
     <frontend>
