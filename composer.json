@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/contacts_grid",
+    "name": "openmage-module-fostering\/contacts_grid",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Contact Us details saves in admin grid form. Admin can respond to customer from this grid directly. ",
     "authors": [
