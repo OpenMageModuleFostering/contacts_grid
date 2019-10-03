@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/contacts_grid",
+    "name": "OpenMageModuleFostering\/contacts_grid",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Contact Us details saves in admin grid form. Admin can respond to customer from this grid directly. ",
     "authors": [
-    {
-        "name": "Akhilesh Yadav",
-        "email": "akhileshaky@gmail.com"
-    }
-],
+        {
+            "name": "Akhilesh Yadav",
+            "email": "akhileshaky@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
